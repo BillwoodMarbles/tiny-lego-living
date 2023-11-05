@@ -1,6 +1,4 @@
-# Stone: Astro Theme
-
-Stone is a free and open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
+# Tiny Lego Living
 
 ## Key Features:
 

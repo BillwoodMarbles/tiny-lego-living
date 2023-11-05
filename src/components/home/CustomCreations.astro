@@ -1,0 +1,42 @@
+---
+const services = [
+  {
+    name: 'Pumpkin Spice',
+    image: '/assets/mocs/coffee.webp',
+  },
+  {
+    name: 'Sagrada Familia',
+    image: '/assets/mocs/sagrada.webp',
+  },
+  {
+    name: 'IOWA',
+    image: '/assets/mocs/iowa.webp',
+  },
+];
+---
+
+<section class="bg-primary py-16 sm:py-24">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-12 sm:gap-16">
+      <h2 class="text-3xl font-medium tracking-tight text-white sm:text-4xl">Recent Creations</h2>
+      <div class="grid gap-8 lg:grid-cols-3">
+        {
+          services.map((service) => (
+            <div class="flex flex-col gap-12 rounded-3xl bg-white/20 px-6 py-6 dark:bg-primary-400/10">
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl font-medium text-white">{service.name}</h3>
+                <img
+                  class="h-80 w-full rounded-3xl object-cover"
+                  width="1000"
+                  height="1000"
+                  src={service.image}
+                  alt={service.name}
+                />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
